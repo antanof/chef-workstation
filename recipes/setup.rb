@@ -2,10 +2,22 @@ package 'tree' do
   action :install
 end
 
-package 'emacs'
-package 'ntp'
-package 'vim-enhanced'
-package 'nano'
+package 'emacs' do
+  action :install
+end
+
+package 'ntp' do
+  action :install
+end
+
+package 'vim-enhanced'do
+  action :install
+end
+
+package 'nano' do
+  action :install
+end
+
 package 'git' do
   action :install
 end
