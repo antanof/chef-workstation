@@ -2,6 +2,7 @@ package 'tree' do
   action :install
 end
 
+package 'emacs'
 package 'ntp'
 package 'vim-enhanced'
 package 'nano'
