@@ -31,6 +31,9 @@ end
 
 template '/etc/motd' do
   source 'motd.erb'
+  variables(
+    :name => 'antanof'
+  )
   owner 'root'
   group 'root'
   action :create
