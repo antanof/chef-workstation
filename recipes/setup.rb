@@ -27,7 +27,11 @@ service 'ntpd' do
 end
 
 file '/etc/motd' do
-  content 'This server is the property of antanof'
+  content 'This server is the property of antanof
+HOSTNAME:
+IPADDRESS:
+CPU:
+MEMORY:'
   owner 'root'
   group 'root'
   action :create
