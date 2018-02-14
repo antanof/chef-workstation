@@ -10,7 +10,7 @@ package 'ntp' do
   action :install
 end
 
-package 'vim-enhanced'do
+package 'vim-enhanced' do
   action :install
 end
 
@@ -23,11 +23,11 @@ package 'git' do
 end
 
 service 'ntpd' do
-  action [ :start, :enable ]
+  action [:start, :enable]
 end
 
-#node['ipaddress']
-#node['memory']['total']
+# node['ipaddress']
+# node['memory']['total']
 
 template '/etc/motd' do
   source 'motd.erb'
